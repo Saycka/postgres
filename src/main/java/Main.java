@@ -1,7 +1,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Connection...");
-        MyConnection.startConnection();
+        MyConnection myConnection = MyConnection.INSTANCE;
+        myConnection.printAllFIO();
+        myConnection.printAllFIOAndPhone();
     }
 }
